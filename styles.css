@@ -18,6 +18,7 @@ button {
   /* Primary */
   --red: hsl(4, 100%, 67%);
   --red-transparent: hsla(4, 100%, 67%, 0.1);
+  --custom-gradient: linear-gradient(180deg, #ff6a3a 0%, #ff527b 100%);
 
   /* Neutral */
   --dark-slate-grey: hsl(234, 29%, 20%);
@@ -132,6 +133,7 @@ body {
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 150%;
+  cursor: pointer;
 }
 
 /* Error state */
@@ -162,6 +164,11 @@ body {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0px;
+}
+
+.submit:hover,
+.success-btn:hover {
+  background: var(--custom-gradient);
 }
 
 .success-container {
