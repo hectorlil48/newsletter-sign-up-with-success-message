@@ -51,7 +51,6 @@ body {
 .form-container,
 .success-container {
   background-color: var(--white);
-  border-radius: 36px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 450px;
@@ -205,11 +204,13 @@ body {
 }
 .attribution a {
   color: var(--red);
+  text-decoration: none;
 }
 
 @media (min-width: 1000px) {
   .form-container {
     max-width: 926px;
+    border-radius: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
