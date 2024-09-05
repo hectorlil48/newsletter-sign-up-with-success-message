@@ -36,7 +36,6 @@ body {
   letter-spacing: 0px;
   color: var(--charcoal-grey);
   min-height: 100vh;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
