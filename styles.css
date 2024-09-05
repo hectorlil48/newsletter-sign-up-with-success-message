@@ -97,11 +97,18 @@ body {
   justify-content: center;
 }
 
-.subscribe-form label {
+.email-box {
   margin-bottom: 8px;
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--dark-slate-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-error {
+  color: var(--red);
 }
 
 .subscribe-form input {
