@@ -79,7 +79,9 @@
               id="email"
               placeholder="email@company.com"
             />
-            <button class="submit">Subscribe to monthly newsletter</button>
+            <button class="submit" aria-label="Subscribe to newsletter">
+              Subscribe to monthly newsletter
+            </button>
           </form>
         </div>
       </div>
@@ -91,14 +93,19 @@
 
     <section id="success-section" class="hidden">
       <div class="success-container">
-        <img src="./assets/images/icon-success.svg" alt="" />
+        <img
+          src="./assets/images/icon-success.svg"
+          alt="image of a check mark"
+        />
         <h1>Thanks for subscribing!</h1>
         <p>
           A confirmation email has been sent to
           <span class="bold">ash@loremcompany.com</span>. Please open it and
           click the button inside to confirm your subscription
         </p>
-        <button class="submit success-btn">Dismiss message</button>
+        <button class="submit success-btn" aria-label="Dismiss success message">
+          Dismiss message
+        </button>
       </div>
     </section>
 

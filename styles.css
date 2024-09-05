@@ -67,7 +67,7 @@ body {
 }
 
 .form-content {
-  padding: 40px 24px;
+  padding: 2.5rem 1.5rem;
 }
 
 .form-content h1,
@@ -75,22 +75,22 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .description {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .flex {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .last-checkmark {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .subscribe-form {
@@ -100,7 +100,7 @@ body {
 }
 
 .email-box {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--dark-slate-grey);
@@ -116,9 +116,7 @@ body {
 /* Error styles for the input field */
 .input-error {
   border: 1px solid var(--red);
-  background-color: var(
-    --red-transparent
-  ); /* Light red background with some transparency */
+  background-color: var(--red-transparent);
 }
 
 .subscribe-form input {
@@ -126,33 +124,29 @@ body {
   border: 1.5px solid var(--grey);
   opacity: 0.7;
   height: 56px;
-  padding-left: 24px;
-  margin-bottom: 24px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 150%;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  font: inherit;
   cursor: pointer;
 }
 
 /* Error state */
 .subscribe-form input.input-error {
-  border-color: var(--red); /* Error border color */
+  border-color: var(--red);
   color: var(--red);
   background-color: var(--red-transparent);
 }
 
 /* Placeholder styles */
 .subscribe-form input::placeholder {
-  color: var(--grey); /* Default placeholder color */
-  opacity: 0.7; /* Default placeholder opacity */
+  color: var(--grey);
+  opacity: 0.7;
 }
 
 /* Placeholder color when there's an error */
 .subscribe-form input.input-error::placeholder {
-  color: var(--red); /* Red placeholder color on error */
-  opacity: 1; /* Fully opaque placeholder on error */
+  color: var(--red);
+  opacity: 1;
 }
 
 .submit {
@@ -162,8 +156,8 @@ body {
   border-radius: 8px;
   height: 56px;
   font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0px;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 
 .submit:hover,
@@ -174,17 +168,17 @@ body {
 .success-container {
   display: flex;
   flex-direction: column;
-  padding: 149px 24px 40px;
+  padding: 9.3125rem 1.5rem 2.5rem;
 }
 
 .success-container img {
   width: 64px;
   height: 64px;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .success-container h1 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .bold {
@@ -192,14 +186,14 @@ body {
 }
 
 .success-btn {
-  margin-top: 263px;
+  margin-top: 16.4375rem;
 }
 
 .attribution {
   font-size: 0.75rem;
   text-align: center;
   color: var(--white);
-  margin-top: 10px;
+  margin: 0.625rem 0;
 }
 .attribution a {
   color: var(--red);
@@ -226,12 +220,12 @@ body {
   .form-image {
     flex: 1;
     order: 2;
-    padding-right: 24px;
+    padding-right: 1.5rem;
   }
 
   .form-content {
     flex: 1;
-    padding: 96px 64px 97px;
+    padding: 6rem 4rem;
   }
 
   .form-content h1,
@@ -240,11 +234,11 @@ body {
   }
 
   .success-container {
-    padding: 48px 64px 64px;
+    padding: 3rem 4rem 4rem;
     border-radius: 36px;
   }
 
   .success-btn {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 }
