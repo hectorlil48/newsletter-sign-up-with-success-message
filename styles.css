@@ -38,6 +38,7 @@ body {
   min-height: 100vh;
   padding: 0 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -50,7 +51,7 @@ body {
 .form-container,
 .success-container {
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 36px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 450px;
@@ -64,6 +65,7 @@ body {
 .form-image img {
   width: 100%;
   display: block;
+  transition: none;
 }
 
 .form-content {
@@ -195,21 +197,22 @@ body {
   margin-top: 263px;
 }
 
-/* .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  } */
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--white);
+  margin-top: 10px;
+}
+.attribution a {
+  color: var(--red);
+}
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
   .form-container {
     max-width: 926px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 36px;
   }
 
   .desktop {
