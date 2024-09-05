@@ -17,6 +17,7 @@ button {
 :root {
   /* Primary */
   --red: hsl(4, 100%, 67%);
+  --red-transparent: hsla(4, 100%, 67%, 0.1);
 
   /* Neutral */
   --dark-slate-grey: hsl(234, 29%, 20%);
@@ -111,10 +112,18 @@ body {
   color: var(--red);
 }
 
+/* Error styles for the input field */
+.input-error {
+  border: 1px solid var(--red);
+  background-color: var(
+    --red-transparent
+  ); /* Light red background with some transparency */
+}
+
 .subscribe-form input {
   border-radius: 8px;
-  border: 1px solid var(--grey);
-  opacity: 50%;
+  border: 1.5px solid var(--grey);
+  opacity: 0.7;
   height: 56px;
   padding-left: 24px;
   margin-bottom: 24px;
@@ -123,6 +132,25 @@ body {
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 150%;
+}
+
+/* Error state */
+.subscribe-form input.input-error {
+  border-color: var(--red); /* Error border color */
+  color: var(--red);
+  background-color: var(--red-transparent);
+}
+
+/* Placeholder styles */
+.subscribe-form input::placeholder {
+  color: var(--grey); /* Default placeholder color */
+  opacity: 0.7; /* Default placeholder opacity */
+}
+
+/* Placeholder color when there's an error */
+.subscribe-form input.input-error::placeholder {
+  color: var(--red); /* Red placeholder color on error */
+  opacity: 1; /* Fully opaque placeholder on error */
 }
 
 .submit {
