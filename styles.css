@@ -35,8 +35,8 @@ body {
   line-height: 150%;
   letter-spacing: 0px;
   color: var(--charcoal-grey);
-  height: 100vh;
-  padding: 0 10px;
+  min-height: 100vh;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
